@@ -15,7 +15,7 @@ export const ResizableBox = () => {
     <Resizable
       height={size.height}
       width={size.width}
-      onResize={(e, { size: newSize, handle }) => {
+      onResize={(_, { size: newSize, handle }) => {
         if (handle === "nw") {
           setLeft((p) => p + (size.width - newSize.width));
         } else {
